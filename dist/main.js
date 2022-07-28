@@ -18,7 +18,7 @@ const fetchData = (ingredients) => {
     addEventListener()
   });
   $('#Input').val('')
-};
+}
 
 const displayDataBtn = () => {
   let ingredients = $('#Input').val().toLowerCase()

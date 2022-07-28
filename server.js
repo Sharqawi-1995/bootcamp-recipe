@@ -7,7 +7,7 @@ const app = express()
 app.use(express.static(path.join(__dirname, 'dist')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
-let parsedData;
+let parsedData
 
 app.get('/recipes/:ingredient', (req, res) => {
   const param = req.params.ingredient
