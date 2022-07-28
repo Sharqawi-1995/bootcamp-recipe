@@ -1,5 +1,5 @@
 {
-  "name": "examproject",
+  "name": "mid-exam",
   "version": "1.0.0",
   "description": "mid-exam",
   "main": "server.js",
@@ -15,6 +15,6 @@
     "jquery": "^3.6.0",
     "json": "^11.0.0",
     "nodemon": "^2.0.19",
-    "urllib": "^2.38.1"
+    "urllib": "^2.4.0"
   }
 }
