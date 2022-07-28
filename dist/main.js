@@ -6,7 +6,7 @@ const addEventListener = () => {
       .closest('.displayData')
       .find('.ulGrid')
       .find('li:first-child')
-      .text();
+      .text()
 
     alert(firstLi)
   })
