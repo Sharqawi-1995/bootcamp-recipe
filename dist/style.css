@@ -9,14 +9,14 @@ body {
   padding: 1vmax;
 }
 
-#teamNameInput {
+#Input {
   flex-grow: 8;
-  caret-color: rgb(0, 0, 0);
+  caret-color: red;
 }
 
 #submitBtn {
   flex-grow: 2;
-  background: rgb(255, 0, 0);
+  background: rgb(0, 185, 3);
 }
 
 #submitBtn:hover {
@@ -26,40 +26,40 @@ body {
 #displayContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  text-align: center;
-  font-weight: 400;
-  font-size: x-large;
+  grid-gap: 30px;
   font-family: Palatino, Georgia, serif;
 }
 
-.displayPlayerData {
-  background-color: #0015ff;
+.displayData {
+  background-color: #e36f0a;
+  padding: 20px;
 }
 
-.namesHeader {
-  position: relative;
+.title {
+  display: block;
 }
 
-.iconAdd {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-}
-
-.iconRemove {
-  position: absolute;
-  top: 5px;
-  left: 10px;
-} 
-
-.icon:hover {
-  color: #bdc3c7;
+.recipesImg {
+  justify-items: center;
+  justify-self: center;
+  width: 10vmax;
+  height: 10vmax;
+  margin-top: 20px;
+  margin-left: 150px;
+  border-radius: 5px;
+  box-shadow: 5px 10px 10px #3b3b3b82;
   cursor: pointer;
 }
 
-.playerImg {
-  background-color: #bdc3c7;
-  width: 95%;
-  height: 340px;
+.ingredientsText {
+  padding-top: 20px;
+}
+
+.ulGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.li-Ingredients {
+  padding-right: 20px;
 }

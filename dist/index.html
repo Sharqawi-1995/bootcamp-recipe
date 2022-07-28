@@ -4,16 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="style.css" />
-    <title>mid-exam</mid-exam></title>
+    <title>mid-exam</title>
   </head>
   <body>
+    <div id="searchContainer">
+      <input type="text" id="Input" placeholder="Enter the ingredients here:" />
+      <button type="submit" id="submitBtn" onclick="displayDataBtn()">
+        Search!
+      </button>
+    </div>
+    <hr />
+
+    <div id="displayContainer"></div>
+
+    <script id="displayContainer-template" type="text/x-handlebars-template">
+      <div class='displayData'>
+        <a class='title' href='{{this.href}}' target='_blank'>{{this.title}}</a>
+        <img class='recipesImg' src='{{this.thumbnail}}' />
+        <div class='ingredientsText'>Ingredients:</div>
+        <ul class='ulGrid'>
+          {{#each ingredients}}
+            <li class='li-Ingredients'>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </script>
 
     <script src="./jquery/dist/jquery.js"></script>
     <script src="./handlebars/dist/handlebars.js"></script>
