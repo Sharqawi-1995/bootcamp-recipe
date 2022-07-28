@@ -4,8 +4,8 @@ const urllib = require('urllib')
 
 const app = express()
 
-app.use(express.static(path.join(__dirname, 'dist')));
-app.use(express.static(path.join(__dirname, 'node_modules')));
+app.use(express.static(path.join(__dirname, 'dist')))
+app.use(express.static(path.join(__dirname, 'node_modules')))
 
 let parsedData
 
